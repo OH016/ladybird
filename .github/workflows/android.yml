@@ -16,9 +16,9 @@ jobs:
       with:
         java-version: 11
     - name: Make Gradle executable
-      run: chmod +x ./gradlew
+      run: chmod +x ./Ladybird/Android/gradlew
     - name: Build Release APK
-      run: ./gradlew assembleRelease
+      run: ./Ladybird/Android/gradlew assembleRelease
     - name: Releasing using Hub
       uses: sangatdesai/release-apk@main
       env:
