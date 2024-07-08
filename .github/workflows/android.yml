@@ -17,7 +17,7 @@ jobs:
     - name: Build Release APK
       run: ./Ladybird/Android/gradlew assembleDebug
     - name: Releasing using Hub
-      uses: sangatdesai/debug-apk@main
+      uses: sangatdesai/releasa-apk@main
 
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
